@@ -1,0 +1,7 @@
+{
+    "name": "bun-contacts",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "bun index.js"
+    }
+}
