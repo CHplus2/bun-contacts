@@ -1,14 +1,14 @@
 # Bun Contacts
 
-A simple contact management web app built with **Bun.js**.  
-It allows you to add contacts through a frontend HTML form and view saved contacts in real time.
+A simple contact form application built with **Bun** runtime and vanilla HTML/JS.  
+Users can submit their name, email, and message, and view all saved contacts via a REST API.
 
 ## Features
 
-- Add new contacts (Name, Email, Message) via a form.
-- View all saved contacts.
-- Built with **Bun.js** runtime and a lightweight server.
-- No database required — data is stored in memory (resets on server restart).
+- Submit contact information through a form
+- View all submitted contacts
+- REST API built using Bun’s built-in `serve` function
+- Lightweight and easy to run (no external dependencies required)
 
 ## Project Structure
 
@@ -16,40 +16,48 @@ It allows you to add contacts through a frontend HTML form and view saved contac
 
 bun-contacts/
 ├─ index.js        # Bun server code
-├─ frontend.html   # Simple HTML frontend
-├─ package.json    # Project metadata & scripts
+├─ frontend.html   # Static HTML frontend
+├─ package.json    # Project metadata + start script
+├─ README.md       # Project documentation
+├─ .gitignore      # Optional 
 
 ````
 
-## Setup
+## Getting Started
+
+### Prerequisites
+
+- Install **Bun**: [https://bun.sh](https://bun.sh)
+
+### Running the Project
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/chplus2/bun-contacts.git
-   cd bun-contacts
+
+```bash
+git clone https://github.com/your-username/bun-contacts.git
+cd bun-contacts
 ````
 
-2. Install Bun (Windows / Mac / Linux):
+2. Install dependencies (none required for now, but keep this for future packages):
 
-   ```bash
-   # Windows PowerShell
-   powershell -c "irm bun.sh/install.ps1 | iex"
-   ```
+```bash
+bun install
+```
 
-3. Run the server:
+3. Start the server:
 
-   ```bash
-   bun index.js
-   ```
+```bash
+bun start
+```
 
-4. Open your browser at `http://localhost:3000` to use the app.
+4. Open your browser and go to:
+
+```
+http://localhost:3000
+```
+
 
 ## Notes
 
-* Data is stored in memory, so all contacts are lost if the server restarts.
-* This is a learning project to practice **Bun.js** and building lightweight APIs.
-
-```
-
-Do you want me to also **add badges** for Bun.js and Node version to make it look more professional?
-```
+* Currently, this project has **no external dependencies**, so `package.json` is mainly used for metadata and the start script.
+* If you add new dependencies with `bun add <package>`, Bun will automatically update `package.json` and `bun.lockb`.
